@@ -23,13 +23,14 @@ public class Tree {
     }
   }
 
+    //Imprimir de manera vertical cada hijo y subhijo.
   public void depthFirstTraversal(TreeNode current) {
     System.out.print(current.data + " ");
     for (TreeNode child : current.children) {
       depthFirstTraversal(child);
     }
   }
-
+    //Imprimir de manera horizontal los hijos de cada nivel, y luego el siguiente
   public void breadthFirstTraversal() {
     TreeNode current = this.root;
     Queue<TreeNode> queue = new LinkedList<>();
